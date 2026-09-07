@@ -27,6 +27,16 @@ struct LedgerTests {
         }
     }
 
+    @Test func aRecordedPanelReadsBackOut() async throws {
+        let ledger = DesignLedger()
+        let panel = try DesignTests.crossed(judges: 2, repeats: 8)
+        await ledger.record("panel", panel: panel)
+        #expect(try await ledger.panel(for: "panel") == panel)
+        await #expect(throws: PanelDesignError.unknownPanel("absent")) {
+            _ = try await ledger.panel(for: "absent")
+        }
+    }
+
     @Test func recordingReplacesWhatWasThere() async throws {
         let ledger = DesignLedger()
         await ledger.record("panel", panel: try DesignTests.crossed(judges: 2, repeats: 8))

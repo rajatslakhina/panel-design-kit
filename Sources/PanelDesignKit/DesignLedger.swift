@@ -75,7 +75,13 @@ public actor DesignLedger {
         return try DesignDiagnosis(panel: matrix)
     }
 
-    private func panel(for key: String) throws -> PanelMatrix {
+    /// The panel recorded under `key`.
+    ///
+    /// A ledger you can record into and not read back from makes the caller keep a second copy of
+    /// the fixture, which is how the two drift apart.
+    ///
+    /// - Throws: ``PanelDesignError/unknownPanel(_:)``.
+    public func panel(for key: String) throws -> PanelMatrix {
         guard let recorded = panels[key] else {
             throw PanelDesignError.unknownPanel(key)
         }

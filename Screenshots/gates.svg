@@ -8,7 +8,7 @@
 <text x="860" y="118" fill="#3fb950" font-size="13" text-anchor="end">0&#160;warnings,&#160;0&#160;errors</text>
 <line x1="40" y1="130" x2="860" y2="130" stroke="#21262d" stroke-width="1"/>
 <text x="40" y="158" fill="#e6edf3" font-size="13">swift&#160;test</text>
-<text x="860" y="158" fill="#3fb950" font-size="13" text-anchor="end">63&#160;tests&#160;in&#160;8&#160;suites,&#160;0&#160;failures</text>
+<text x="860" y="158" fill="#3fb950" font-size="13" text-anchor="end">64&#160;tests&#160;in&#160;8&#160;suites,&#160;0&#160;failures</text>
 <line x1="40" y1="170" x2="860" y2="170" stroke="#21262d" stroke-width="1"/>
 <text x="40" y="198" fill="#e6edf3" font-size="13">llvm-cov&#160;(10&#160;library&#160;files)</text>
 <text x="860" y="198" fill="#3fb950" font-size="13" text-anchor="end">100.00%&#160;regions&#160;/&#160;functions&#160;/&#160;lines</text>

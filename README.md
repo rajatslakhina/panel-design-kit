@@ -161,7 +161,7 @@ swift run PanelDesignDemo
 
 ![gates](Screenshots/gates.svg)
 
-`swift build` 0 warnings, 0 errors. **63 tests in 8 suites, 0 failures.** `llvm-cov`
+`swift build` 0 warnings, 0 errors. **64 tests in 8 suites, 0 failures.** `llvm-cov`
 **100.00% on regions, functions and lines across all 10 library files** — the only file in the
 report below 100% is swift-testing's own generated `runner.swift`, which is not package code.
 `swiftlint --strict` (0.63.2, real binary) **0 violations in 17 files**.
