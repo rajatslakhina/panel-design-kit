@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="610" viewBox="0 0 900 610">
+<defs><marker id="a" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto">
+<path d="M0,0 L0,6 L8,3 z" fill="#8b949e"/></marker></defs>
+<rect width="900" height="610" fill="#0d1117"/>
+<g font-family="SF Mono,Menlo,monospace">
+<text x="450" y="34" fill="#e6edf3" font-size="17" font-weight="bold" text-anchor="middle">PanelDesignKit</text>
+<text x="450" y="55" fill="#8b949e" font-size="12" text-anchor="middle">what&#160;a&#160;fixture&#160;can&#160;carry,&#160;decided&#160;before&#160;anything&#160;is&#160;measured&#160;on&#160;it</text>
+<rect x="300" y="78" width="300" height="56" rx="6" fill="none" stroke="#79c0ff" stroke-width="1.6"/>
+<text x="450.0" y="100" fill="#e6edf3" font-size="13" font-weight="bold" text-anchor="middle">MarginalProfile&#160;x&#160;2</text>
+<text x="450.0" y="118" fill="#8b949e" font-size="11" text-anchor="middle">one&#160;judge's&#160;per-category&#160;totals,&#160;validated</text>
+<line x1="450" y1="134" x2="450" y2="156" stroke="#8b949e" stroke-width="1.4" marker-end="url(#a)"/>
+<text x="450" y="176" fill="#d29922" font-size="12" font-weight="bold" text-anchor="middle">AttainableAgreement&#160;-&#160;exact&#160;at&#160;every&#160;category&#160;count</text>
+<rect x="30" y="190" width="265" height="84" rx="6" fill="none" stroke="#3fb950" stroke-width="1.6"/>
+<text x="162.5" y="212" fill="#e6edf3" font-size="13" font-weight="bold" text-anchor="middle">range</text>
+<text x="162.5" y="230" fill="#8b949e" font-size="11" text-anchor="middle">lower&#160;=&#160;max(0,&#160;max_k(a_k+b_k-n))</text>
+<text x="162.5" y="245" fill="#8b949e" font-size="11" text-anchor="middle">upper&#160;=&#160;sum_k&#160;min(a_k,&#160;b_k)</text>
+<text x="162.5" y="260" fill="#8b949e" font-size="11" text-anchor="middle">verified&#160;by&#160;enumeration</text>
+<rect x="317" y="190" width="265" height="84" rx="6" fill="none" stroke="#3fb950" stroke-width="1.6"/>
+<text x="449.5" y="212" fill="#e6edf3" font-size="13" font-weight="bold" text-anchor="middle">lattice</text>
+<text x="449.5" y="230" fill="#8b949e" font-size="11" text-anchor="middle">step&#160;2&#160;for&#160;two&#160;categories,&#160;exactly</text>
+<text x="449.5" y="245" fill="#8b949e" font-size="11" text-anchor="middle">nil&#160;above&#160;two:&#160;the&#160;set&#160;has&#160;holes</text>
+<text x="449.5" y="260" fill="#8b949e" font-size="11" text-anchor="middle">{0,1,2,3,5}&#160;for&#160;[1,2,2]&#160;over&#160;5</text>
+<rect x="604" y="190" width="265" height="84" rx="6" fill="none" stroke="#3fb950" stroke-width="1.6"/>
+<text x="736.5" y="212" fill="#e6edf3" font-size="13" font-weight="bold" text-anchor="middle">marginsAreIdentical</text>
+<text x="736.5" y="230" fill="#8b949e" font-size="11" text-anchor="middle">forbids&#160;agreement&#160;of&#160;n-1</text>
+<text x="736.5" y="245" fill="#8b949e" font-size="11" text-anchor="middle">one&#160;disagreement&#160;cannot&#160;exist</text>
+<text x="736.5" y="260" fill="#8b949e" font-size="11" text-anchor="middle">alone&#160;at&#160;any&#160;category&#160;count</text>
+<line x1="162" y1="274" x2="162" y2="300" stroke="#8b949e" stroke-width="1.4" marker-end="url(#a)"/>
+<line x1="450" y1="274" x2="450" y2="300" stroke="#8b949e" stroke-width="1.4" marker-end="url(#a)"/>
+<line x1="736" y1="274" x2="736" y2="300" stroke="#8b949e" stroke-width="1.4" marker-end="url(#a)"/>
+<rect x="30" y="308" width="400" height="92" rx="6" fill="none" stroke="#79c0ff" stroke-width="1.6"/>
+<text x="230.0" y="330" fill="#e6edf3" font-size="13" font-weight="bold" text-anchor="middle">BinaryPanelBuilder&#160;-&#160;two&#160;categories&#160;only</text>
+<text x="230.0" y="348" fill="#8b949e" font-size="11" text-anchor="middle">target&#160;-&gt;&#160;the&#160;one&#160;free&#160;cell&#160;-&gt;&#160;exact&#160;table</text>
+<text x="230.0" y="363" fill="#8b949e" font-size="11" text-anchor="middle">.independence&#160;&#160;.agreementRate&#160;&#160;.oddsRatio</text>
+<text x="230.0" y="378" fill="#8b949e" font-size="11" text-anchor="middle">snapped&#160;onto&#160;the&#160;lattice,&#160;distance&#160;reported</text>
+<rect x="469" y="308" width="400" height="92" rx="6" fill="none" stroke="#d29922" stroke-width="1.6"/>
+<text x="669.0" y="330" fill="#e6edf3" font-size="13" font-weight="bold" text-anchor="middle">DesignDiagnosis&#160;-&#160;any&#160;category&#160;count</text>
+<text x="669.0" y="348" fill="#8b949e" font-size="11" text-anchor="middle">max&#160;|observed&#160;-&#160;expected|&#160;per&#160;pair</text>
+<text x="669.0" y="363" fill="#8b949e" font-size="11" text-anchor="middle">isFullyCrossed:&#160;every&#160;combination&#160;equally&#160;often</text>
+<text x="669.0" y="378" fill="#8b949e" font-size="11" text-anchor="middle">certify()&#160;is&#160;the&#160;only&#160;call&#160;that&#160;refuses</text>
+<line x1="230" y1="400" x2="230" y2="428" stroke="#8b949e" stroke-width="1.4" marker-end="url(#a)"/>
+<line x1="669" y1="400" x2="669" y2="428" stroke="#8b949e" stroke-width="1.4" marker-end="url(#a)"/>
+<rect x="30" y="436" width="400" height="76" rx="6" fill="none" stroke="#79c0ff" stroke-width="1.6"/>
+<text x="230.0" y="458" fill="#e6edf3" font-size="13" font-weight="bold" text-anchor="middle">PlackettRoot</text>
+<text x="230.0" y="476" fill="#8b949e" font-size="11" text-anchor="middle">one&#160;root,&#160;two&#160;algebraic&#160;forms</text>
+<text x="230.0" y="491" fill="#8b949e" font-size="11" text-anchor="middle">branch&#160;chosen&#160;by&#160;the&#160;sign&#160;of&#160;t</text>
+<rect x="469" y="436" width="400" height="76" rx="6" fill="none" stroke="#79c0ff" stroke-width="1.6"/>
+<text x="669.0" y="458" fill="#e6edf3" font-size="13" font-weight="bold" text-anchor="middle">PanelRealization</text>
+<text x="669.0" y="476" fill="#8b949e" font-size="11" text-anchor="middle">table&#160;-&gt;&#160;two&#160;label&#160;vectors,&#160;seeded</text>
+<text x="669.0" y="491" fill="#8b949e" font-size="11" text-anchor="middle">feeds&#160;ChanceAgreementKit,&#160;EffectiveVoteKit</text>
+<line x1="230" y1="512" x2="400" y2="540" stroke="#8b949e" stroke-width="1.4" marker-end="url(#a)"/>
+<line x1="669" y1="512" x2="500" y2="540" stroke="#8b949e" stroke-width="1.4" marker-end="url(#a)"/>
+<rect x="180" y="548" width="540" height="50" rx="6" fill="none" stroke="#d29922" stroke-width="1.6"/>
+<text x="450.0" y="570" fill="#e6edf3" font-size="13" font-weight="bold" text-anchor="middle">DesignLedger&#160;-&#160;diagnosing&#160;is&#160;free,&#160;certifying&#160;is&#160;not</text>
+<text x="450.0" y="588" fill="#8b949e" font-size="11" text-anchor="middle">record&#160;-&gt;&#160;diagnosis&#160;-&gt;&#160;certify&#160;-&gt;&#160;replacement&#160;-&gt;&#160;adopt</text>
+</g></svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="586" viewBox="0 0 900 586">
+<rect width="900" height="586" fill="#0d1117"/>
+<g font-family="SF Mono,Menlo,monospace">
+<text x="40" y="46" fill="#e6edf3" font-size="17" font-weight="bold">PanelDesignKit&#160;-&#160;quality&#160;gates</text>
+<text x="40" y="68" fill="#8b949e" font-size="12">Swift&#160;6.2.4&#160;.&#160;macOS&#160;26.6.2&#160;.&#160;every&#160;figure&#160;tool-measured,&#160;none&#160;asserted</text>
+<line x1="40" y1="86" x2="860" y2="86" stroke="#30363d" stroke-width="1.5"/>
+<text x="40" y="118" fill="#e6edf3" font-size="13">swift&#160;build</text>
+<text x="860" y="118" fill="#3fb950" font-size="13" text-anchor="end">0&#160;warnings,&#160;0&#160;errors</text>
+<line x1="40" y1="130" x2="860" y2="130" stroke="#21262d" stroke-width="1"/>
+<text x="40" y="158" fill="#e6edf3" font-size="13">swift&#160;test</text>
+<text x="860" y="158" fill="#3fb950" font-size="13" text-anchor="end">63&#160;tests&#160;in&#160;8&#160;suites,&#160;0&#160;failures</text>
+<line x1="40" y1="170" x2="860" y2="170" stroke="#21262d" stroke-width="1"/>
+<text x="40" y="198" fill="#e6edf3" font-size="13">llvm-cov&#160;(10&#160;library&#160;files)</text>
+<text x="860" y="198" fill="#3fb950" font-size="13" text-anchor="end">100.00%&#160;regions&#160;/&#160;functions&#160;/&#160;lines</text>
+<line x1="40" y1="210" x2="860" y2="210" stroke="#21262d" stroke-width="1"/>
+<text x="40" y="238" fill="#e6edf3" font-size="13">swiftlint&#160;--strict&#160;0.63.2</text>
+<text x="860" y="238" fill="#3fb950" font-size="13" text-anchor="end">0&#160;violations&#160;in&#160;17&#160;files</text>
+<line x1="40" y1="250" x2="860" y2="250" stroke="#21262d" stroke-width="1"/>
+<text x="40" y="278" fill="#e6edf3" font-size="13">fresh-clone&#160;rebuild</text>
+<text x="860" y="278" fill="#8b949e" font-size="13" text-anchor="end">see&#160;run&#160;log</text>
+<line x1="40" y1="290" x2="860" y2="290" stroke="#21262d" stroke-width="1"/>
+<text x="40" y="340" fill="#d29922" font-size="13" font-weight="bold">figures&#160;pinned&#160;in&#160;the&#160;suite</text>
+<text x="40" y="370" fill="#8b949e" font-size="12">crossed&#160;fixture,&#160;every&#160;pair</text>
+<text x="860" y="370" fill="#79c0ff" font-size="12" text-anchor="end">max&#160;|obs&#160;-&#160;exp|&#160;=&#160;0.000000</text>
+<text x="40" y="396" fill="#8b949e" font-size="12">attainable&#160;counts,&#160;121&#160;vs&#160;110&#160;of&#160;200</text>
+<text x="860" y="396" fill="#79c0ff" font-size="12" text-anchor="end">80&#160;of&#160;159&#160;integers&#160;exist</text>
+<text x="40" y="422" fill="#8b949e" font-size="12">independence&#160;on&#160;an&#160;integer&#160;panel</text>
+<text x="860" y="422" fill="#79c0ff" font-size="12" text-anchor="end">0.4500&#160;off&#160;exact</text>
+<text x="40" y="448" fill="#8b949e" font-size="12">textbook&#160;root&#160;at&#160;psi&#160;=&#160;1&#160;-&#160;1e-13</text>
+<text x="860" y="448" fill="#79c0ff" font-size="12" text-anchor="end">relative&#160;error&#160;2.265e-05</text>
+<text x="40" y="474" fill="#8b949e" font-size="12">rationalised&#160;root&#160;at&#160;psi&#160;=&#160;1e-09</text>
+<text x="860" y="474" fill="#79c0ff" font-size="12" text-anchor="end">odds-ratio&#160;residual&#160;1.303e+01</text>
+<text x="40" y="500" fill="#8b949e" font-size="12">selected&#160;branch,&#160;both&#160;regimes</text>
+<text x="860" y="500" fill="#79c0ff" font-size="12" text-anchor="end">residual&#160;&lt;&#160;1e-06</text>
+</g></svg>
