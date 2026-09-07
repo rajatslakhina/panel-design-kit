@@ -140,13 +140,17 @@ every category count; `BinaryPanelBuilder` declines to solve it and says so.
 | `oddsRatioNotPositive` | a target no joint distribution has |
 | `oddsRatioUndefined` | reading an odds ratio off a table with an empty cell |
 
+`DesignDiagnosis(panel:)` deliberately does **not** throw. Every pair it looks at comes from
+`0..<judgeCount` with `first < second`, so there is nothing left for an index check to test, and an
+error case no caller can produce costs every consumer a `catch` arm they cannot cover.
+
 An empty cell is not an infinite association. It is an association the table has no information
 about, and the two read very differently on a page.
 
 ## Install
 
 ```swift
-.package(url: "https://github.com/rajatslakhina/panel-design-kit.git", from: "1.0.0")
+.package(url: "https://github.com/rajatslakhina/panel-design-kit.git", from: "1.1.0")
 ```
 
 ## Demo

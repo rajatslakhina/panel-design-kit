@@ -41,6 +41,15 @@ public struct JointTable: Sendable, Equatable {
         self.itemCount = total
     }
 
+    /// Builds a table from cells a caller has already established are valid.
+    ///
+    /// Used where the cells are counted off an already-validated panel, so the checks in
+    /// ``init(cells:)`` would restate a fact rather than test one.
+    init(validated cells: [[Int]], itemCount: Int) {
+        self.cells = cells
+        self.itemCount = itemCount
+    }
+
     /// The first judge's marginal.
     public var rowMargin: MarginalProfile {
         MarginalProfile(validated: cells.map { $0.reduce(0, +) }, itemCount: itemCount)

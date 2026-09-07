@@ -52,7 +52,7 @@ struct DesignTests {
     }
 
     @Test func aCrossedFixtureIsExactlyIndependentOnEveryPair() throws {
-        let diagnosis = try DesignDiagnosis(panel: Self.crossed(judges: 3, repeats: 25))
+        let diagnosis = DesignDiagnosis(panel: try Self.crossed(judges: 3, repeats: 25))
         #expect(diagnosis.judgeCount == 3)
         #expect(diagnosis.itemCount == 200)
         #expect(diagnosis.deviations.count == 3)
@@ -68,7 +68,7 @@ struct DesignTests {
     }
 
     @Test func certifyingANullFixtureIsTheOneRefusal() throws {
-        let diagnosis = try DesignDiagnosis(panel: Self.crossed(judges: 2, repeats: 8))
+        let diagnosis = DesignDiagnosis(panel: try Self.crossed(judges: 2, repeats: 8))
         #expect(throws: PanelDesignError.designCarriesNoAssociation(judges: 2, deviation: 0)) {
             _ = try diagnosis.certify()
         }
@@ -88,20 +88,20 @@ struct DesignTests {
         let panel = try PanelMatrix(
             labels: [[0, 0, 1, 1, 0], [0, 1, 0, 1, 1]], categoryCount: 2
         )
-        #expect(!(try DesignDiagnosis(panel: panel).isFullyCrossed))
+        #expect(!DesignDiagnosis(panel: panel).isFullyCrossed)
     }
 
     @Test func crossingIsRejectedWhenACombinationIsMissing() throws {
         let panel = try PanelMatrix(
             labels: [[0, 0, 1, 1], [0, 0, 1, 1]], categoryCount: 2
         )
-        #expect(!(try DesignDiagnosis(panel: panel).isFullyCrossed))
+        #expect(!DesignDiagnosis(panel: panel).isFullyCrossed)
     }
 
     @Test func crossingIsRejectedWhenThereAreMoreCombinationsThanItems() throws {
         let panel = try PanelMatrix(
             labels: [[0, 1], [1, 0], [0, 0], [1, 1]], categoryCount: 2
         )
-        #expect(!(try DesignDiagnosis(panel: panel).isFullyCrossed))
+        #expect(!DesignDiagnosis(panel: panel).isFullyCrossed)
     }
 }

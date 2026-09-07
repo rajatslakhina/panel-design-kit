@@ -45,12 +45,16 @@ public struct DesignDiagnosis: Sendable, Equatable {
     /// its pairwise association is not small — it is zero, to the last bit.
     public let isFullyCrossed: Bool
 
-    /// - Throws: whatever ``PanelMatrix/table(_:_:)`` refuses.
-    public init(panel: PanelMatrix) throws {
+    /// Does not throw, and that is deliberate.
+    ///
+    /// Every pair it looks at comes from `0..<judgeCount` with `first < second`, so the index
+    /// checks a caller-supplied pair needs have nothing left to test. An error case no caller can
+    /// produce costs every consumer a `catch` arm they cannot cover.
+    public init(panel: PanelMatrix) {
         var found: [PairDeviation] = []
         for first in 0..<panel.judgeCount {
             for second in (first + 1)..<panel.judgeCount {
-                let table = try panel.table(first, second)
+                let table = panel.validatedTable(first, second)
                 found.append(
                     PairDeviation(
                         first: first,

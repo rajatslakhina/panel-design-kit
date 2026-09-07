@@ -25,7 +25,7 @@ public actor DesignLedger {
     ///
     /// - Throws: ``PanelDesignError/unknownPanel(_:)``.
     public func diagnosis(for key: String) throws -> DesignDiagnosis {
-        try DesignDiagnosis(panel: try panel(for: key))
+        DesignDiagnosis(panel: try panel(for: key))
     }
 
     /// The diagnosis, or a refusal if the fixture is structurally null.
@@ -64,15 +64,14 @@ public actor DesignLedger {
 
     /// Records the realisation of `construction` under `key` and returns its diagnosis.
     ///
-    /// - Throws: whatever ``PanelRealization/matrix()`` or ``DesignDiagnosis/init(panel:)``
-    ///   refuses.
+    /// - Throws: whatever ``PanelRealization/matrix()`` refuses.
     @discardableResult
     public func adopt(
         _ key: String, construction: BinaryConstruction, seed: UInt64
     ) throws -> DesignDiagnosis {
         let matrix = try PanelRealization(table: construction.table, seed: seed).matrix()
         panels[key] = matrix
-        return try DesignDiagnosis(panel: matrix)
+        return DesignDiagnosis(panel: matrix)
     }
 
     /// The panel recorded under `key`.

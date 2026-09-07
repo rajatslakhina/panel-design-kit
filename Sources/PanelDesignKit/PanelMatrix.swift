@@ -68,6 +68,19 @@ public struct PanelMatrix: Sendable, Equatable {
         return try JointTable(cells: cells)
     }
 
+    /// The joint table for a pair this type has already established is valid.
+    ///
+    /// The public ``table(_:_:)`` checks the indices because a caller supplies them. Inside a loop
+    /// over `0..<judgeCount` with `first < second` there is nothing left to check, and a `throws`
+    /// there would be an error case no caller could ever produce.
+    func validatedTable(_ first: Int, _ second: Int) -> JointTable {
+        var cells = [[Int]](
+            repeating: [Int](repeating: 0, count: categoryCount), count: categoryCount
+        )
+        for (row, column) in zip(labels[first], labels[second]) { cells[row][column] += 1 }
+        return JointTable(validated: cells, itemCount: itemCount)
+    }
+
     private func requireJudge(_ judge: Int) throws {
         guard judge >= 0, judge < judgeCount else {
             throw PanelDesignError.judgeOutOfRange(judge)

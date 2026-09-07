@@ -12,7 +12,7 @@ struct PanelSpec {
 enum DemoScenarios {
 
     static func crossedFixture(_ panel: PanelMatrix) throws -> String {
-        let diagnosis = try DesignDiagnosis(panel: panel)
+        let diagnosis = DesignDiagnosis(panel: panel)
         var lines = [Format.heading("A. The fixture three gates were crossed into")]
         let header = "judges \(diagnosis.judgeCount)   items \(diagnosis.itemCount)"
         lines.append(header + "   fully crossed \(diagnosis.isFullyCrossed)")
